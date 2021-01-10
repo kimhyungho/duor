@@ -3,4 +3,13 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="mainColor">#FF3E3E</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="blackColor">#000000</color>
+    <color name="kakaoBackgroundColor">#FEE500</color>
+    <color name="kakaoTextColor">#D9000000</color>
+    <color name="grayColor1">#E1E1E1</color>
+    <color name="grayColor2">#B0B0B0</color>
+    <color name="yellowColor">#ffa42b</color>
+    <color name="blueColor">#6c89ff</color>
 </resources>
