@@ -1,5 +1,6 @@
 package com.appdev.duo.model
 
+import android.annotation.SuppressLint
 import com.appdev.duo.network.UserAPI
 import com.appdev.duo.network.UserService
 import com.github.windsekirun.rxsociallogin.RxSocialLogin
@@ -13,15 +14,20 @@ class UserModel {
     }
 
     init {
-//        service = UserAPI().service
+        service = UserAPI().service
     }
 
+    @SuppressLint("CheckResult")
     fun login() {
         RxSocialLogin.result()
             .doOnNext { }
             .subscribe({
                 val mAccessToken = AccessToken.Factory.getInstance().accessToken
-//                service.login()
+                service!!.login(mAccessToken).subscribe({
+
+                }, {
+
+                })
             }, {
 
             })
