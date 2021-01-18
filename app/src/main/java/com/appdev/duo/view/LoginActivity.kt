@@ -34,7 +34,7 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
         setContentView(R.layout.activity_login)
 
         initView()
-        initSettings()
+//        initSettings()
         initListener()
 
     }
@@ -54,50 +54,50 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
         progressBar = login_progressbar
     }
 
-    private fun initSettings() {
-        RxSocialLogin.initialize(this)
-
-        progressBar.visibility = View.GONE
-
-
-        RxSocialLogin.result()
-            .doOnNext{progressBar.visibility = View.VISIBLE}
-            .subscribe({
-                val mAccessToken = AccessToken.Factory.getInstance().accessToken
-                UserAPI(mAccessToken, null).service
-                    .login()
-                    .subscribeOn(Schedulers.io())
-                    .observeOn(AndroidSchedulers.mainThread())
-                    .subscribe({
-                        progressBar.visibility = View.GONE
-                        Log.d("result", it.userToken)
-                        finish()
-                        val intent = Intent(this, MainActivity::class.java)
-                        startActivity(intent)
-                    }, {
-                        if (it is HttpException) {
-                            progressBar.visibility = View.GONE
-                            val code =
-                                JSONObject(it.response()?.errorBody()?.string()).getString("code")
-                            when (code) {
-                                "-401" -> {
-                                    Log.d("result", "-401")
-                                }
-                                "-412" -> {
-                                    Log.d("result", "-412")
-                                }
-                                "-500" -> {
-                                    Log.d("result", "-500")
-                                }
-                            }
-                        }
-
-                    })
-
-            }, {
-                Log.e("Error", "LoginError", it)
-            }).addTo(compositeDisposable)
-    }
+//    private fun initSettings() {
+//        RxSocialLogin.initialize(this)
+//
+//        progressBar.visibility = View.GONE
+//
+//
+//        RxSocialLogin.result()
+//            .doOnNext{progressBar.visibility = View.VISIBLE}
+//            .subscribe({
+//                val mAccessToken = AccessToken.Factory.getInstance().accessToken
+//                UserAPI(mAccessToken, null).service
+//                    .login()
+//                    .subscribeOn(Schedulers.io())
+//                    .observeOn(AndroidSchedulers.mainThread())
+//                    .subscribe({
+//                        progressBar.visibility = View.GONE
+//                        Log.d("result", it.userToken)
+//                        finish()
+//                        val intent = Intent(this, MainActivity::class.java)
+//                        startActivity(intent)
+//                    }, {
+//                        if (it is HttpException) {
+//                            progressBar.visibility = View.GONE
+//                            val code =
+//                                JSONObject(it.response()?.errorBody()?.string()).getString("code")
+//                            when (code) {
+//                                "-401" -> {
+//                                    Log.d("result", "-401")
+//                                }
+//                                "-412" -> {
+//                                    Log.d("result", "-412")
+//                                }
+//                                "-500" -> {
+//                                    Log.d("result", "-500")
+//                                }
+//                            }
+//                        }
+//
+//                    })
+//
+//            }, {
+//                Log.e("Error", "LoginError", it)
+//            }).addTo(compositeDisposable)
+//    }
 
     private fun initListener() {
         kakaoLoginBtn.setOnClickListener {
