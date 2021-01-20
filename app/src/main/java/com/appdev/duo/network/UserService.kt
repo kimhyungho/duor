@@ -8,7 +8,7 @@ import retrofit2.http.POST
 
 interface UserService {
 
-    @POST("/auth/kakao")
+    @POST("auth/kakao")
     fun login(
         @Header("Authorization") accessToken: String
     ): Single<User>

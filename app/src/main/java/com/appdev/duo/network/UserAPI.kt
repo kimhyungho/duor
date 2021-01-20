@@ -11,7 +11,7 @@ class UserAPI {
     var service: UserService
 
 
-    private val BASE_URL = "http://ec2-18-222-143-156.us-east-2.compute.amazonaws.com:3000/"
+    private val BASE_URL = "http://ec2-18-222-143-156.us-east-2.compute.amazonaws.com:3000"
 
     init {
 //        val header = Interceptor {

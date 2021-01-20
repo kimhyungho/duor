@@ -19,11 +19,11 @@ class MyInfoFragment() : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_my_info, container, false)
 
-        val click = view.findViewById<ConstraintLayout>(R.id.myinfo_alarm)
-        click.setOnClickListener {
-            fragmentManager!!.beginTransaction().replace(R.id.myinfo_container, InquireFragment())
-                .addToBackStack(null).commit()
-        }
+//        val click = view.findViewById<ConstraintLayout>(R.id.myinfo_alarm)
+//        click.setOnClickListener {
+//            fragmentManager!!.beginTransaction().replace(R.id.myinfo_container, InquireFragment())
+//                .addToBackStack(null).commit()
+//        }
 
         return view
     }

@@ -22,13 +22,19 @@ class MainActivity : AppCompatActivity() {
 
         viewpager.adapter = MainViewPagerAdapter(this)
         TabLayoutMediator(tablayout, viewpager) {tab, position->
+            val viewPagerText = arrayListOf<String>(
+                "홈",
+                "채팅",
+                "내 정보"
+            )
+
             val viewPagerIcon = arrayListOf<Int>(
                 R.drawable.ic_home,
                 R.drawable.ic_chat,
                 R.drawable.ic_my_info
             )
+            tab.setText(viewPagerText[position])
             tab.setIcon(viewPagerIcon[position])
-
         }.attach()
 
 

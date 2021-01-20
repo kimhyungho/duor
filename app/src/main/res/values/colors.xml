@@ -11,5 +11,8 @@
     <color name="grayColor1">#E1E1E1</color>
     <color name="grayColor2">#B0B0B0</color>
     <color name="yellowColor">#ffa42b</color>
-    <color name="blueColor">#6c89ff</color>
+    <color name="blueColor1">#6c89ff</color>
+    <color name="blueColor">#415fce</color>
+    <color name="title">#9fa6aa</color>
+    <color name="homeBackground">#f8f8ff</color>
 </resources>

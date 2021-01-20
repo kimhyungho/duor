@@ -1,4 +1,7 @@
 <resources>
+    <string name="home.text1">혼자하기 외롭지 않으세요?</string>
+    <string name="home.text2">지금 바로 같이할 게임 친구를 찾아보세요!</string>
+    <string name="lol_api_key">RGAPI-602c20b2-51da-4624-98cd-af156b9b3a43</string>
     <string name="app_name">duo</string>
     <string name="app_name_kor">듀오구함</string>
     <string name="kakao_login">카카오 로그인</string>

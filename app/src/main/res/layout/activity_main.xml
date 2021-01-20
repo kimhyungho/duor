@@ -7,21 +7,32 @@
     tools:context=".view.MainActivity">
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/main_viewpager"
+        android:id="@+id/main.viewpager"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/main_tablayout"
+        app:layout_constraintBottom_toTopOf="@+id/main.frame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/main_tablayout"
+        android:id="@+id/main.tablayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/main.frame"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#ebebeb"
+        app:layout_constraintBottom_toTopOf="@+id/main.tablayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
