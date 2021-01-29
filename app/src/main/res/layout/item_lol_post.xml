@@ -6,30 +6,24 @@
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="6dp"
         android:background="@drawable/button_post"
-        android:elevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/lol_item_gamemode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/jalnan"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="60dp"
             android:gravity="center"
-            android:textColor="@color/mainColor"
+            android:textColor="@color/blackColor"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="일반" />
@@ -40,9 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="7dp"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/jalnan"
             android:gravity="center"
-            android:textColor="@color/blueColor"
+            android:textColor="@color/blackColor"
             app:layout_constraintStart_toEndOf="@+id/lol_item_gamemode"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="I3~G3" />
@@ -53,9 +46,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="7dp"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/jalnan"
             android:gravity="center"
-            android:textColor="@color/yellowColor"
+            android:textColor="@color/blackColor"
             app:layout_constraintStart_toEndOf="@+id/lol_item_tier"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="인원 1명" />
@@ -77,6 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lol_item_gamemode"
@@ -86,13 +79,14 @@
             android:id="@+id/lol_item_recruit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="328dp"
             android:layout_marginTop="14dp"
             android:layout_marginBottom="12dp"
             android:text="모집중"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lol_item_title" />
+            app:layout_constraintTop_toBottomOf="@+id/lol_item_title"
+            app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
             android:id="@+id/lol_item_mic"
@@ -103,7 +97,30 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/lol_item_recruit"
             app:layout_constraintTop_toBottomOf="@+id/lol_item_title"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/ic_baseline_mic_24" />
 
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/grayColor2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </FrameLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:background="@color/grayColor1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

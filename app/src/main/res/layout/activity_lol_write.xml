@@ -45,7 +45,6 @@
             android:id="@+id/lol_write_complete"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_activated"
             android:text="@string/upload"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -28,7 +28,6 @@ class HomeFragment() : Fragment() {
 
         return view
     }
-
     private fun initView(view: View) {
         lolBtn = view.findViewById(R.id.home_lol)
         chatBtn = view.findViewById(R.id.home_chat)
