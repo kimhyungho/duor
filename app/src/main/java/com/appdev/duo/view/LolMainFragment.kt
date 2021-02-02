@@ -6,23 +6,45 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.appdev.duo.R
 import com.appdev.duo.adapter.LolPostAdapter
 import com.appdev.duo.data.LolPost
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
 
 class LolMainFragment() : Fragment() {
+    lateinit var filterBtn: ConstraintLayout
+    lateinit var writeBtn: FloatingActionButton
+    lateinit var recyclerView: RecyclerView
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_lol_main, container, false)
-        val writeBtn = view.findViewById<TextView>(R.id.lol_main_write)
-        val recyclerView = view.findViewById<RecyclerView>(R.id.lol_main_post_list)
+
+        initView(view)
+        initSetting()
+        initListener()
+
+
+        return view
+    }
+
+    private fun initView(view: View) {
+        filterBtn = view.findViewById(R.id.lolmain_filter)
+        writeBtn = view.findViewById(R.id.lol_main_write)
+        recyclerView = view.findViewById<RecyclerView>(R.id.lol_main_post_list)
+    }
+
+    private fun initSetting() {
+
         var dummyLolPost = mutableListOf<LolPost>(
             LolPost(
                 1, "빵만드는브랜드", "일반",
@@ -75,15 +97,20 @@ class LolMainFragment() : Fragment() {
             )
         )
 
-
         recyclerView.layoutManager = LinearLayoutManager(activity)
         recyclerView.adapter = LolPostAdapter(dummyLolPost, activity!!)
 
+    }
+
+    private fun initListener() {
         writeBtn.setOnClickListener {
             val intent = Intent(activity, LolWriteActivity::class.java)
             startActivity(intent)
         }
 
-        return view
+        filterBtn.setOnClickListener {
+            val intent = Intent(activity, LolFilterActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -3,7 +3,8 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="mainColor">#FF3E3E</color>
+    <color name="mainColor">#415fce</color>
+<!--    <color name="mainColor">#FF3E3E</color>-->
     <color name="whiteColor">#FFFFFF</color>
     <color name="blackColor">#000000</color>
     <color name="kakaoBackgroundColor">#FEE500</color>
@@ -15,4 +16,5 @@
     <color name="blueColor">#415fce</color>
     <color name="title">#9fa6aa</color>
     <color name="homeBackground">#f8f8ff</color>
+    <color name="greenColor">#3fc4b0</color>
 </resources>

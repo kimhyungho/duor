@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gamemode">
+        <item>일반</item>
+        <item>솔랭</item>
+        <item>자랭</item>
+        <item>칼바람</item>
+        <item>커스텀</item>
+    </string-array>
+
+    <string-array name="tier">
+        <item>아이언4</item>
+        <item>아이언3</item>
+        <item>아이언2</item>
+        <item>아이언1</item>
+        <item>브론즈4</item>
+        <item>브론즈3</item>
+        <item>브론즈2</item>
+        <item>브론즈1</item>
+        <item>실버4</item>
+        <item>실버3</item>
+        <item>실버2</item>
+        <item>실버1</item>
+        <item>골드4</item>
+        <item>골드3</item>
+        <item>골드2</item>
+        <item>골드1</item>
+        <item>플레티넘4</item>
+        <item>플레티넘3</item>
+        <item>플레티넘2</item>
+        <item>플레티넘1</item>
+        <item>다이아4</item>
+        <item>다이아3</item>
+        <item>다이아2</item>
+        <item>다이아1</item>
+        <item>마스터</item>
+        <item>그랜드마스터</item>
+        <item>챌린저</item>
+    </string-array>
+</resources>

@@ -28,13 +28,7 @@ class MainActivity : AppCompatActivity() {
                 "내 정보"
             )
 
-            val viewPagerIcon = arrayListOf<Int>(
-                R.drawable.ic_home,
-                R.drawable.ic_chat,
-                R.drawable.ic_my_info
-            )
             tab.setText(viewPagerText[position])
-            tab.setIcon(viewPagerIcon[position])
         }.attach()
 
 

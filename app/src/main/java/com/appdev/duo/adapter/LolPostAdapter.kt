@@ -30,8 +30,8 @@ class LolPostAdapter(val lolPostList: List<LolPost>, val activity: Activity) : R
         holder.tier.text = "${item.startTier}~${item.endTier}"
         holder.title.text = item.title
         holder.time.text = "15분전"
-        if(item.talkon == 1) holder.mic.setImageResource(R.drawable.ic_baseline_mic_24)
-        else holder.mic.setImageResource(R.drawable.ic_baseline_mic_off_24)
+//        if(item.talkon == 1) holder.mic.setImageResource(R.drawable.ic_baseline_mic_24)
+//        else holder.mic.setImageResource(R.drawable.ic_baseline_mic_off_24)
 
         holder.itemView.setOnClickListener {
             val intent = Intent(activity, LolDetailPostActivity::class.java)
@@ -41,10 +41,9 @@ class LolPostAdapter(val lolPostList: List<LolPost>, val activity: Activity) : R
 }
 
 class LolPostViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-    val gameMode = itemView.findViewById<TextView>(R.id.lol_item_gamemode)
+    val gameMode = itemView.findViewById<TextView>(R.id.lol_item_game_mode)
     val tier = itemView.findViewById<TextView>(R.id.lol_item_tier)
     val headcount = itemView.findViewById<TextView>(R.id.lol_item_headcount)
     val title = itemView.findViewById<TextView>(R.id.lol_item_title)
     val time = itemView.findViewById<TextView>(R.id.lol_item_time)
-    val mic = itemView.findViewById<ImageView>(R.id.lol_item_mic)
 }
