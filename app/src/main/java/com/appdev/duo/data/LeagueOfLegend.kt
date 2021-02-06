@@ -8,8 +8,8 @@ class LeagueOfLegendSummoner(
     var puuid: String,
     var name: String,
     var profileIconId: Int,
-    var revisionDate: Int,
-    var summonerLevel: Int
+    var revisionDate: Long,
+    var summonerLevel: Long
 ) : Serializable
 
 class LeagueOfLegendEntries(

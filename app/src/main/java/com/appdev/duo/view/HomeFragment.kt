@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
@@ -13,8 +14,8 @@ import com.google.android.material.tabs.TabLayout
 class HomeFragment() : Fragment() {
 
     lateinit var lolBtn: ConstraintLayout
-    lateinit var chatBtn: ConstraintLayout
-    lateinit var myInfoBtn: ConstraintLayout
+//    lateinit var chatBtn: ConstraintLayout
+//    lateinit var myInfoBtn: ConstraintLayout
     lateinit var mainViewPager: ViewPager2
 
     override fun onCreateView(
@@ -29,25 +30,25 @@ class HomeFragment() : Fragment() {
         return view
     }
     private fun initView(view: View) {
-        lolBtn = view.findViewById(R.id.home_lol)
-        chatBtn = view.findViewById(R.id.home_chat)
-        myInfoBtn = view.findViewById(R.id.home_myinfo)
+        lolBtn = view.findViewById(R.id.home_lol_button)
+//        chatBtn = view.findViewById(R.id.home_)
+//        myInfoBtn = view.findViewById(R.id.home_myinfo)
         mainViewPager = activity!!.findViewById(R.id.main_viewpager)
     }
 
     private fun initListener() {
         lolBtn.setOnClickListener {
-            fragmentManager!!.beginTransaction().replace(R.id.lol_home_container, LolMainFragment())
+            fragmentManager!!.beginTransaction().replace(R.id.home_container, LolMainFragment())
                 .addToBackStack(null).commit()
         }
 
-        chatBtn.setOnClickListener {
-            mainViewPager.currentItem = 1
-        }
-
-        myInfoBtn.setOnClickListener {
-            mainViewPager.currentItem = 2
-        }
+//        chatBtn.setOnClickListener {
+//            mainViewPager.currentItem = 1
+//        }
+//
+//        myInfoBtn.setOnClickListener {
+//            mainViewPager.currentItem = 2
+//        }
 
 
     }

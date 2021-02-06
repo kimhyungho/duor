@@ -9,15 +9,15 @@ import retrofit2.http.Query
 
 interface LeagueOfLegendService {
 
-    @GET("/lol/summoner/v4/summoners/by-name/{nickname}")
+    @GET("lol/summoner/v4/summoners/by-name/{nickname}")
     fun getSummoner(
         @Path("nickname") nickname: String,
         @Query("api_key") api_key: String
     ): Single<LeagueOfLegendSummoner>
 
-    @GET("/lol/league/v4/entries/by-summoner/{id}")
+    @GET("lol/league/v4/entries/by-summoner/{id}")
     fun getEntries(
         @Path("id") id: String,
         @Query("api_key") api_key: String
-    ): Single<LeagueOfLegendEntries>
+    ): Single<Array<LeagueOfLegendEntries>>
 }
