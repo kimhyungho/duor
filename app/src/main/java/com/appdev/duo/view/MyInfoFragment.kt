@@ -1,6 +1,7 @@
 package com.appdev.duo.view
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,6 +17,7 @@ import org.w3c.dom.Text
 
 class MyInfoFragment() : Fragment() {
     lateinit var myInfoList: ListView
+    lateinit var registerLolBtn: ConstraintLayout
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -40,6 +42,7 @@ class MyInfoFragment() : Fragment() {
 
     private fun initView(view: View) {
         myInfoList = view.findViewById(R.id.myinfo_listview)
+        registerLolBtn = view.findViewById(R.id.myinfo_register_lol)
     }
 
     private fun initSetting() {
@@ -49,6 +52,11 @@ class MyInfoFragment() : Fragment() {
     }
 
     private fun initListener() {
+
+        registerLolBtn.setOnClickListener {
+            val intent = Intent(activity, RegisterGameNicknameActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

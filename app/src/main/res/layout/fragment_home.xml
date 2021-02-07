@@ -14,7 +14,7 @@
         android:layout_marginTop="12dp"
         android:fontFamily="@font/jalnan"
         android:text="듀오구함"
-        android:textColor="@color/blueColor"
+        android:textColor="@color/mainColor"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

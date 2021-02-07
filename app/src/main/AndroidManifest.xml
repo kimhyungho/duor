@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".view.RegisterGameNicknameActivity"></activity>
         <activity android:name=".view.LolFilterActivity" />
         <activity android:name=".view.LolDetailPostActivity" />
         <activity android:name=".view.LolWriteActivity" />
