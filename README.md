@@ -1,13 +1,13 @@
 # Duo9ham
 <p align="center">
-  <img width="100" height="100" src="https://github.com/kimhyungho/ANDROID-FastCampusInstaClone/blob/master/insta_logo.png">
+  <img width="100" height="100" src="https://github.com/kimhyungho/ANDROID-duo9ham/blob/master/duo_logo.png">
 </p>
 <p align="center">
-  <b>배추마켓</b>
+  <b>듀오구함</b>
   </br>
-  중고거래 어플리케이션 클론 프로젝트 배추마켓
+  채팅기반의 게임 유저 매칭 서비스
   </br>
-  <a href="https://github.com/kimhyungho/ANDROID-CabbageMarket/">Project Link>></a>
+  <a href="https://github.com/kimhyungho/ANDROID-duo9ham/">Android Project Link>></a>
 </p>
 
 
