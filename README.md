@@ -31,4 +31,14 @@ MVP 아키텍처로 수정 예정</br>
 <a href="https://developer.riotgames.com/">라이엇 리그오브 레전드 전적 API</a>
 
 # App Image
+<p>
+  <img width="200" src="https://github.com/kimhyungho/ANDROID-duo9ham/blob/master/duo_app_image/1.jpg">
+  <img width="200" src="https://github.com/kimhyungho/ANDROID-duo9ham/blob/master/duo_app_image/2.jpg">
+  <img width="200" src="https://github.com/kimhyungho/ANDROID-duo9ham/blob/master/duo_app_image/3.jpg">
+  <img width="200" src="https://github.com/kimhyungho/ANDROID-duo9ham/blob/master/duo_app_image/4.jpg">
+  <img width="200" src="https://github.com/kimhyungho/ANDROID-duo9ham/blob/master/duo_app_image/5.jpg">
+  <img width="200" src="https://github.com/kimhyungho/ANDROID-duo9ham/blob/master/duo_app_image/6.jpg">
+  <img width="200" src="https://github.com/kimhyungho/ANDROID-duo9ham/blob/master/duo_app_image/7.jpg">
+  <img width="200" src="https://github.com/kimhyungho/ANDROID-duo9ham/blob/master/duo_app_image/8.jpg">
+</p>
 
